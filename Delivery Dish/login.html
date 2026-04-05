@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Delivery Dish</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="img/Delivery-Dish-Logo-Piccolo.png">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(36, 36, 36);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (max-width: 800px){
+            body {
+                background-color: white;
+                align-items: flex-start;
+            }
+        }
+    </style>
+    <!--IONOICONS-->
+    <script src="https://kit.fontawesome.com/73dc7ea47c.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="login-crea-account">
+        <h1>Login</h1>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required style="margin-bottom: 10px;" placeholder="Email">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required placeholder="Password">
+            <button id="invio" type="submit" aria-required="true">CONTINUA</button>
+        </form>
+        <p>oppure</p>
+        <div class="login-type">
+            <button class="google-continue">
+                <ion-icon name="logo-google"></ion-icon>
+                <p>Continua con Google</p>
+            </button>
+            <button class="apple-continue">
+                <ion-icon name="logo-apple"></ion-icon>
+                <p>Continua con Apple</p>
+            </button>
+        </div>
+        <div class="ca">
+            <span>Non hai un account?</span>
+            <a href="crea-account.html">Crea account</a>
+        </div>
+    </div>
+</body>
+</html>

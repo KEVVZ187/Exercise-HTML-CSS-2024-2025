@@ -1,0 +1,886 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    font-size: normal;
+    font-style: normal;
+    background-color: rgb(36, 36, 36);
+}
+
+/* HEADER - NAV */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+    padding: 12px 20px;
+}
+.logo img {width: 100px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #191919;
+    font-size: 24px;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: RED;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: #191919;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 45px;
+    right: 20px;
+}
+#check {display: none;}
+
+/* MAIN */
+/* Row Colonne */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* FRONT PAGE */
+.front-page {
+    background: url(img/background.png) center center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    height: 720px;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+/* Ordina cibo */
+.ts1 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+.ts1 h1 {font-size: 4.2rem;}
+.ts1 p {
+    font-size: 2.4rem;
+    font-weight: 420;
+    margin: 10px 0px 50px 0px;
+}
+.ts1 form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    width: 100%;
+}
+.ts1 input {
+    width: 75%;
+    height: 65px;
+    font-size: 25px;
+    padding: 15px;
+    border: solid #191919 3px;
+    border-radius: 50px;
+}
+.ts1 button {
+    position: relative;
+    right: 110px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ts1 button:hover {
+    background-color: #191919;
+    transition: 0.5s;
+}
+/* Immagine cibo */
+.ts2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ts2-img {
+    background: url(img/Menu-panino.png) center center no-repeat;
+    background-size: contain;
+    width: 700px;
+    height: 700px;
+}
+
+/* COME ORDINARE */
+.ComeOrdinare {
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+.co {
+    text-align: center;
+    padding: 15px;
+}
+.co h1{font-size: 38px;}
+#co-t {color: #ff0000;}
+.co-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.column {
+    width: 33.33%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.column h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.column p {
+    font-size: 20px;
+    font-weight: 420;
+}
+.column img {
+    height: 120px;
+    margin-bottom: 35px;
+}
+
+/* SCARICA L'APP */
+.ScaricaApp {
+    background-color: #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 35px 25px 0px 25px;
+}
+.SA-text {width: auto;}
+.SA-text h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+.SA-text p {
+    font-size: 20px;
+    font-weight: 420;
+    margin-bottom: 40px;
+}
+.SA-app {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+}
+.SA-app img{width: 175px;}
+.SA-img {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 45px;
+}
+.SA-img img{width: 300px;}
+
+/* UNIAMO LE FORZE */
+.UniamoLeForze {
+    background-color: #700000;
+    color: white;
+    height: auto;
+    padding: 20px 0px;
+}
+.ULF-text {
+    text-align: center;
+    padding: 20px;
+}
+.ULF-text h1 {
+    font-size: 38px;
+}
+.ULF-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ULF-column {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ULF-column img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid white 3.5px;
+}
+.ULF-column h1 {
+    padding-top: 15px;
+    font-size: 35px;
+}
+.ULF-column p {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    height: auto;
+}
+.ULF-column a {
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.ULF-column a:hover {
+    background-color: #191919;
+    transform: translateY(-0.25em);
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.footer a {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.footer ol{list-style: none;}
+.footer li{
+    font-size: 15px;
+    padding: 10px 0px;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 450;
+    transition: 0.5s;
+}
+.footer a:hover {
+    color: #ff0000;
+    transition: 0.5s;
+}
+.FT-logo img{width: 120px;}
+.FT-type {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.FT-text {
+    padding: 0px 30px;
+    background-color: black;
+}
+.FT-S {padding: 0px 30px;}
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.socials a {
+    font-size: 30px;
+    padding: 0px 8px;
+}
+.ft-app {
+    display: flex;
+    height: 30px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+} 
+.ft-app img{width: 150px;}
+
+
+/* FAST FOOD & RISTORANTI */
+.FF-RT-container {
+    padding: 25px;
+    background-color: #e4e4e4;
+    color: #191919;
+}
+.T-FF-RT {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.T-FF-RT h1{
+    color: #ff0000;
+    font-size: 38px;
+}
+.T-FF-RT p {
+    font-weight: bold;
+    font-size: 25px;
+}
+.search-bar {
+    display: flex;
+    width: 300px;
+}
+.search-bar input{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+}
+.search-bar button {
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #ff0000;
+    color: white;
+    transition: 0.5s;
+}
+.search-bar button:hover {background-color: #191919;}
+.row-FF-RT {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FF-RT-V {width: 30%;}
+.FF-RT-CC {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.FF-RT-checkbox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 15px 15px 0px;
+}
+.FF-RT-checkbox h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.FF-RT-checkbox input {width: 30px;}
+.FF-RT-radio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.FF-RT-checkbox p {font-size: 20px;}
+.FF-RT-radio h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.FF-RT-radio label {font-size: 20px;}
+.FF-RT-radio input {
+    width: 30px;
+    height: 30px;
+}
+.brand-container {
+    width: 70%;
+    padding: 0px 25px;
+}
+.all-brands {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand {
+    background-color: white;
+    width: auto;
+    border-radius: 15px;
+    width: 330px;
+    padding-bottom: 10px;
+    margin: 20px 0px;
+}
+.brand a {
+    text-decoration: none;
+    color: #191919;
+}
+.brand img {
+    width: 330px;
+    height: 180px;
+    background-color: yellow;
+    border-radius: 15px 15px 0px 0px;
+}
+.brand h1 {
+    padding-left: 15px;
+    font-size: 28px;
+    padding-bottom: 6px;
+    color: black;
+}
+.brand p {
+    color: black;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.brand2-container {
+    width: 100%;
+}
+
+/* LOGIN & CREA ACCOUNT */
+.login-crea-account {
+    height: 550px;
+    width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.login-crea-account button {cursor: pointer;}
+.login-crea-account h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 38px;
+    height: 90px;
+    color: #ff0000;
+    width: 100%;
+    border-bottom: #ff0000 solid 4px;
+}
+.login-crea-account form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-crea-account label {
+    font-weight: 450;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    width: 100%;
+    font-size: 25px;
+}
+.login-crea-account input {
+    height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(223, 219, 219);
+    outline: none;
+    width: 93%;
+}
+#invio {
+    margin-top: 22px;
+    margin-bottom: 14px;
+    width: 250px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#invio:hover {background-color: #191919;}
+.login-crea-account p {
+    font-size: 18px;
+    text-align: center;
+}
+.login-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+    margin-bottom: 15px;
+}
+.google-continue{
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: solid grey 2px;
+    outline: none;
+    margin-bottom: 8px;
+    color: black;
+}
+.google-continue ion-icon {
+    font-size: 25px;
+    margin-right: 8px;
+}
+.apple-continue{
+    width: 300px;
+    background-color: #000000e6;
+    border-radius: 15px;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-bottom: 8px;
+}
+.apple-continue ion-icon {
+    font-size: 25px;
+    margin-right: 8px;
+}
+.ca {text-align: center;}
+.ca span {
+    font-size: 18px;
+    margin-right: 8px;
+}
+.ca a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.ca a:hover {color: #191919;}
+
+/* CHI SIAMO */
+.CS-container {background-color: #e4e4e4;}
+.CS-text {padding: 25px;}
+.CS-text h1{
+    color: #ff0000;
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+.CS-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.CS-text p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.CS-text ul {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* FAQ */
+.FAQ {
+    background-color: #e4e4e4;
+    padding: 25px;
+    color: #191919;
+}
+.FAQ h1 {
+    color: #ff0000;
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+.FAQ h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.FAQ p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* CONTATTI */
+.CTT-container {background-color: #e4e4e4;}
+.CTT-container {
+    padding: 25px;
+}
+.CTT-container h1{
+    color: #ff0000;
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+.CTT-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.CTT-container p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.CTT-container a {
+    text-decoration: none;
+    color: #ff0000;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.CTT-container a:hover {color: #191919;}
+
+/* TERMINI E CONDIZIONI */
+.TEC {
+    background-color: #e4e4e4;
+    padding: 25px;
+    color: #191919;
+}
+.TEC h1{
+    color: #ff0000;
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+.TEC h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.TEC p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.TEC a {
+    text-decoration: none;
+    color: #ff0000;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.TEC a:hover {color: #191919;}
+
+/* PRIVACY POLICY % COOKIE POLICY */
+.PPCP {
+    background-color: #e4e4e4;
+    padding: 25px;
+    color: #191919;
+}
+.PPCP h1 {
+    color: #ff0000;
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+.PPCP h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.PPCP p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.PPCP ul {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.PPCP a {
+    text-decoration: none;
+    color: #ff0000;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.PPCP a:hover {color: #191919;}
+
+
+/* Responsive layout*/
+/*NAVBAR*/
+@media(max-width: 700px){
+    /* HEADER - NAVBAR */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: white;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+@media screen and (max-width: 1200px){
+    /* FRONT PAGE */
+    .ts1 input {font-size: 15px;}
+}
+@media screen and (max-width: 800px) {
+    /* FRONTE PAGE - SFONDO */
+    .front-page {
+        height: auto;
+        background-size: cover;
+        background: url(img/background-2.png);
+    }
+    .ts1 {width: 100%;}
+    .ts1 h1 {font-size: 2.5rem;}
+    .ts1 input {font-size: 20px;}
+    .ts2 {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .ts2-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    /* COME ORDINARE*/
+    .co-2 {flex-direction: column;}
+    .column {
+        padding: 25px 15px;
+        width: 100%;
+    }
+
+    /* LOGIN */
+    .login {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+    #invio {width: 93%;}
+    .google-continue {width: 93%;}
+    .apple-continue {width: 93%;}
+}
+@media screen and (max-width: 720px) {
+    /* SCARICA L'APP */
+    .ScaricaApp {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .SA-text {
+        width: 100%;
+        text-align: center;
+    }
+    .SA-img {
+        justify-content: center;
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 35px;
+    }
+    .SA-app {
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px) {
+    /* FRONT PAGE - TESTO */
+    .ts1 {width: 100%;}
+    .ts1 p {font-size: 2rem;}
+    .ts1 input {font-size: 0.8rem;}
+    .ts2 {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    /* UNIAMO LE FORZE */
+    .ULF-container {flex-direction: column;}
+    .ULF-column {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer {flex-wrap: wrap;}
+    .FT-logo {
+        padding-left: 25px;
+        width: 100%;
+    }
+    .FT-text {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .FT-S {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .FT-ATPC {
+        width: 100%;
+        padding: 0px 30px 25px 30px;
+    }
+    .ft-app {justify-content: flex-start;}
+    .TPC {padding-top: 10px;}
+}
+
+@media screen and (max-width: 1100px) {
+    /* FAST FOOD & RISTORANTI */
+    .T-FF-RT {flex-wrap: wrap;}
+    .T-FF-RT h1 {width: 100%;}
+    .T-FF-RT p {
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .search-bar {width: 100%;}
+    .row-FF-RT {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .FF-RT-V {width: 100%;}
+    .brand-container {
+        width: 100%;
+        padding: 0;
+    }
+    .all-brands {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .brand {
+        margin: 10px 10px;
+    }
+}

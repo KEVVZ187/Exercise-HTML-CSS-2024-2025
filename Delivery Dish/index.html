@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Dish | Consegna a domicilio</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="img/Delivery-Dish-Logo-Piccolo.png">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--IONOICONS-->
+    <script src="https://kit.fontawesome.com/73dc7ea47c.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- HEADER - NAVBAR -->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html' title="Home"><img src='img/Delivery-Dish-Logo.png' draggable="false" alt="Delivery Dish Logo"></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="fast-food.html" title="Fast Food">Fast Food</a></li>
+                    <li><a href="ristoranti.html" title="Ristoranti">Ristoranti</a></li>
+                    <li><a href="uniamo-le-forze.html" title="Uniamo le Forze">Uniamo le Forze</a></li>
+                    <li><a href="login.html" title="Login"><ion-icon name="person"></ion-icon></a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="row">
+            <!-- FRONT PAGE -->
+            <div class="front-page">
+                <div class="ts1">
+                    <h1>Ordina cibo e tanto altro</h1>
+                    <p>Fast Food e Ristoranti</p>
+                    <form>
+                        <input title="Inserisci il tuo indirizzo completo" type="text" name="indirizzo" id="text" required placeholder="Inserisci il tuo indirizzo completo">
+                        <button type="submit" onclick="location.href='Ordina-con-Delivery-Dish.html'">Trova</button>
+                    </form>
+                </div>
+                <div class="ts2">
+                    <div class="ts2-img"></div>
+                </div>
+            </div>
+            <!-- COME ORDINARE -->
+            <div class="ComeOrdinare">
+                <div class="co">
+                    <h1>Come ordinare</h1>
+                    <h1 id="co-t">È semplicissimo!</h1>
+                </div>
+                <div class="co-2">    
+                    <div class="column">
+                        <img src="img/Pin.png" draggable="false" alt="Pin">
+                        <h2>Indicaci la tua posizione</h2>
+                        <p>
+                            Ti mostreremo i negozi e i ristoranti della tua zona da cui puoi ordinare.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <img src="img/Hamburger.png" draggable="false" alt="Hamburger">
+                        <h2>Trova ciò che desideri</h2>
+                        <p>
+                            Cerca articoli o piatti, locali o cucine.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <img src="img/Pentola.png" draggable="false" alt="Pentola">
+                        <h2>Ordina con consegna o ritiro al locale</h2>
+                        <p>
+                            Ti terremo aggiornato sullo stato del tuo ordine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- SCARICA L'APP -->
+            <div class="ScaricaApp">
+                <div class="SA-text">
+                    <h1>Scarica l’app</h1>
+                    <p>Il tuo piatto preferito è a portata di click!</p>
+                    <div class="SA-app">
+                        <img src="img/Download-Appstore.png" draggable="false" alt="Download on the App Store">
+                        <img src="img/Download-GooglePlay.png" draggable="false" alt="Download on the Google Play">
+                    </div>
+                </div>
+                <div class="SA-img">
+                    <img src="img/Telefono.png" draggable="false" alt="Telefono">
+                </div>
+            </div>
+            <!-- UNIAMO LE FORZE -->
+            <div class="UniamoLeForze">
+                <div class="ULF-text">
+                    <h1>UNIAMO LE FORZE</h1>
+                </div>
+                <div class="ULF-container">
+                    <div class="ULF-column">
+                        <img src="img/Rider.png" draggable="false" alt="Rider">
+                        <h1>Diventa un rider</h1>
+                        <p>
+                            Goditi flessibilità, libertà e guadagni competitivi effettuando consegne tramite <br>Delivery Dish.
+                        </p>
+                        <a href="login.html">Registrati qui</a>
+                    </div>
+                    <div class="ULF-column">
+                        <img src="img/Partner.png" draggable="false" alt="Partner">
+                        <h1>Diventa partner</h1>
+                        <p>
+                            Cresci con noi! La nostra tecnologia e la nostra base di utenti possono aiutarti a incrementare le vendite e cogliere nuove opportunità!
+                        </p>
+                        <a href="login.html">Registrati qui</a>
+                    </div>
+                    <div class="ULF-column">
+                        <img src="img/Lavora-con-noi.png" draggable="false" alt="Lavora con noi">
+                        <h1>Lavora con noi</h1>
+                        <p>
+                            Sei alla ricerca di una nuova sfida? Ambizione, umiltà e lavoro di squadra sono i nostri valori: se li condividi anche tu, mettiti in contatto con noi!
+                        </p>
+                        <a href="login.html">Registrati qui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="FT-logo">
+                <img src="img/Delivery-Dish-Logo-Footer.png" draggable="false" alt="Logo Delivery Dish Footer">
+            </div>
+            <div class="FT-text">
+                <h1>Uniamo le forze</h1>
+                <ol>
+                    <li><a href="login.html">Rider</a></li>
+                    <li><a href="login.html">Partner</a></li>
+                    <li><a href="login.html">Lavora con noi</a></li>
+                </ol>
+            </div>
+            <div class="FT-text">
+                <h1>Link di Interesse</h1>
+                <ol>
+                    <li><a href="chi-siamo.html">Chi siamo</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ol>
+            </div>
+            <div class="FT-S">
+                <h1>Seguici sui socials</h1>
+                <div class="socials">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </div>
+            </div>
+            <div class="FT-ATPC">
+                <div class="ft-app">
+                    <img src="img/Download-Appstore.png" draggable="false" alt="Download-Appstore">
+                    <img src="img/Download-GooglePlay.png" draggable="false"  alt="Download-GooglePlay">
+                </div>
+                <div class="TPC">
+                    <ol>
+                        <li><a href="termini-condizioni.html">Termini e condizioni</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie policy</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
