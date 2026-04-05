@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+<head>
+    <title>Registrati | Vivaio Verde Incantato</title>
+    <link rel="website icon" type="png" href="img/Logo-Verde-Incantato-Small.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body
+    style="background: linear-gradient(#019b43, #138074); height: 774px; background-repeat: no-repeat; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 0 20px;">
+    <!--Registrati-->
+    <div class="Registrati-box">
+        <h1>Registrati</h1>
+        <form>
+            <div class="inputext">
+                <label id="user-txt" for="User">Nome e Cognome</label>
+                <ion-icon name="person-add" class="icon"></ion-icon>
+                <input style="margin-bottom: 20px;" id="txt" type="text" required name="Email">
+            </div>
+
+            <div class="inputext">
+                <label id="login-txt" for="Email">Email</label>
+                <ion-icon name="mail" class="icon"></ion-icon>
+                <input style="margin-bottom: 20px;" id="txt" type="text" required name="Email">
+            </div>
+
+            <div class="passwordtext">
+                <label id="login-txt" for="Password">Password</label>
+                <ion-icon name="lock-closed" class="icon"></ion-icon>
+                <input style="margin-bottom: 40px;" id="txt" type="password" required name="Password">
+            </div>
+
+            <div class="bnt">
+                <button id="Tasto" onclick="document.location='index.html'" type="submit">
+                    CONTINUA
+                </button>
+            </div>
+        </form>
+        <br>
+        <div class="Accountnew">
+            <h5>Hai gia un account?</h5>
+            <button type="submit" id="Tasto-2" onclick="document.location='Login.html'">
+                ACCEDI
+            </button>
+        </div>
+
+    </div>
+</body>
+
+
+<!--ICONE PRESO NEL SITOWEB IONICONS-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: linear-gradient(#019b43, #138074);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+
+
+/*HEADER*/
+.header {
+    height: 140px;
+    background-color: black;
+    color: white;
+    display: flex; /* Flexbox per il layout */
+    align-items: center; /*Ricorda allineamento in verticalmente!*/
+    position: sticky; /* il div header si attachera */
+    top: 0;
+    border-bottom: solid #019b43 8px;
+    z-index: 1000; /* header che sta al livello più alto di tutti */
+}
+
+#Logo {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 200px;
+    background-color: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Name-Logo {
+    background-color: none;
+}
+
+.Navbar {
+    text-align: center;
+    width: 1000px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+
+.Navbar-2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+#Lista {
+    color: white;
+    margin: 0px 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#Lista:hover {
+    transition: 0.5s;
+    color: #138074;
+    text-decoration: underline;
+}
+
+
+
+
+/*TASTO LOGIN*/
+#Button {
+    color: white;
+    background: linear-gradient(#019b43, #138074);
+    padding: 10px;
+    border-radius: 350px;
+    border: solid white 3px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+#Button:hover {
+    color: #138074;
+    transition: 1s;
+    background:white;
+}
+
+
+
+
+
+
+
+
+
+/*CONTENT*/
+.box {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.benvenuto {
+    background: url("img/Index-sfondo.png");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 250px 0;
+    width: auto;
+}
+
+.benvenuto h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.788);
+    margin: 5px;
+}
+
+.benvenuto p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+/* Chi Siamo */
+.chi-siamo {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chi-siamo h2 {
+    font-size: 48px;
+    color: #138074;
+    margin-bottom: 20px;
+}
+
+.chi-siamo p {
+    font-size: 22px;
+    color: rgb(102, 102, 102);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Galleria */
+.galleria {
+    padding: 50px 0;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+    font-weight: bold;
+}
+
+.galleria h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #138074;
+}
+
+.galleria p {
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 30px;
+}
+
+.galleria-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galleria-item {
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    scale: 100%;
+}
+
+.galleria-item:hover {
+    scale: 105%;
+}
+
+.galleria-img-item {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.galleria-item h3 {
+    padding: 15px;
+    font-size: 25px;
+    background-color: #019b43;
+    color: white;
+}
+
+.galleria-item a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 325px;
+}
+
+.e-con-inner1 {
+    width: 700px;
+    height: 260px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    border-right: solid #019b43 3px;
+}
+
+.e-con-inner1 p {
+    margin: 0;
+    font-size: 19px;
+    color: #019b43;
+    font-weight: bold;
+}
+
+.e-con-inner2 {
+    width: 700px;
+    height: 260px;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 30px;
+    border-right: solid #019b43 3px;
+}
+
+.e-con-inner2 ul {
+    list-style: none;
+}
+
+.list-footer {
+    padding-left: 0px;
+}
+
+.e-con-inner2 a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #019b43;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.e-con-inner2 a:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.e-con-inner3 {
+    width: 700px;
+    height: 260px;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.e-con-inner3 h1 {
+    font-size: 25px;
+    color: #019b43;
+    margin-bottom: 0px;
+}
+
+.social a {
+    color: #019b43;
+    font-size: 50px;
+}
+
+.privacy {
+    margin-top:88px;
+    height: 50px;
+    align-self: start;
+}
+
+.privacy ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.privacy li {
+    margin-right: 20px;
+}
+
+.privacy a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #019b43;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.privacy a:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PIANTE*/
+.piante-box {
+    height: 650px;
+    display: flex;
+    background-size: cover;
+    align-content: center;
+    align-items: center;
+    align-self: auto;
+    background-image: url("img/Piante-sfondo.png");
+}
+
+.piante-testo {
+    padding: 15px;
+    background-color: #000000;
+    width: 550px;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    border-radius: 25px;
+    border: solid white 4px;
+}
+
+.piante-testo h1 {
+    margin-top: 0;
+    font-size: 60px;
+    margin-bottom: 5px;
+    border-bottom: solid white 4px;
+}
+
+.piante-testo p {
+    color: white;
+}
+
+.piante {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+.pianta {
+    width: 22%;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    scale: 100%;
+    margin-bottom: 15px;
+}
+
+.pianta:hover {
+    scale: 105%;
+}
+
+.pianta-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+h3 {
+    font-size: 30px;
+    color: #019b43;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+    color: #666;
+    margin: 0 10px 15px;
+    font-weight: bold;
+}
+
+
+
+
+/*GIARDINI*/
+.giardini-box {
+    height: 650px;
+    display: flex;
+    background-size: cover;
+    align-content: center;
+    align-items: center;
+    align-self: auto;
+    background-image: url("img/Giardini-sfondo.png");
+}
+
+.giardini-testo {
+    padding: 15px;
+    background-color: #000000;
+    width: 550px;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    border-radius: 25px;
+    border: solid white 4px;
+}
+
+.giardini-testo h1 {
+    margin-top: 0;
+    font-size: 60px;
+    margin-bottom: 5px;
+    border-bottom: solid white 4px;
+}
+
+.giardini-testo p {
+    color: white;
+}
+
+.giardini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+.giardino {
+    width: 22%;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    scale: 100%;
+    margin-bottom: 15px;
+}
+
+.giardino:hover {
+    scale: 105%;
+}
+
+.giardino-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+
+
+
+/*FIORI*/
+.fiori-box {
+    height: 650px;
+    display: flex;
+    background-size: cover;
+    align-content: center;
+    align-items: center;
+    align-self: auto;
+    background-image: url("img/Fiori-sfondo.png");
+}
+
+.fiori-testo {
+    padding: 15px;
+    background-color: #000000;
+    width: 550px;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    border-radius: 25px;
+    border: solid white 4px;
+}
+
+.fiori-testo h1 {
+    margin-top: 0;
+    font-size: 60px;
+    margin-bottom: 5px;
+    border-bottom: solid white 4px;
+}
+
+.fiori-testo p {
+    color: white;
+}
+
+.fiori {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+.fiore {
+    width: 22%;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    scale: 100%;
+    margin-bottom: 15px;
+}
+
+.fiore:hover {
+    scale: 105%;
+}
+
+.fiore-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*LOGIN*/
+.login-box {
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 450px;
+    height: 520px;
+    border: 3px solid rgba(255, 255, 255, 0.877);
+    border-radius: 30px;
+}
+
+.login-box h1{
+    font-size: 40px;
+    border-bottom: solid 3px white;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inputext {
+    text-align: left;
+}
+
+.passwordtext {
+    text-align: left;
+}
+
+#login-txt{
+    margin-left: 45px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#txt {
+    margin-left: 45px;
+    display: flex;
+    position: static;
+    width: 76%;
+    height: 30px;
+    border: none white;
+    border-radius: 15px;
+    text-align: left;
+    outline: none;
+    background-color: rgb(230, 230, 230);
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.bnt {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    width: 89%;
+    border: none white;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+    height: 45px;
+}
+
+#Tasto {
+    display: flex;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#019b43, #138074);
+    border: none white;
+    height: 45px;
+    border-radius: 15px;
+    width: 75%;
+    text-align: center;
+    outline: none;
+    transition: 1s;
+}
+
+#Tasto:hover {
+    transition: 0.5s;
+    background: white;
+    color: #138074;   
+}
+
+
+/*New account button*/
+.Accountnew {
+    margin-top: 15px;
+    display: flex;
+    margin-top: 10px;
+    height: 45px;
+    justify-content: center;
+    width: 100%;
+}
+
+h5,.Accountnew {
+    margin-left: 15px;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+#Tasto-2 {
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #138074;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: none white;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTATTI*/
+.contatti-box {
+    height: 650px;
+    display: flex;
+    background-size: cover;
+    align-content: center;
+    align-items: center;
+    align-self: auto;
+    background-image: url("img/Contatti-sfondo.png");
+}
+
+.contatti-testo {
+    padding: 15px;
+    background-color: #000000;
+    width: 550px;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    border-radius: 25px;
+    border: solid white 4px;
+}
+
+.contatti-testo h1 {
+    margin-top: 0;
+    font-size: 60px;
+    margin-bottom: 5px;
+    border-bottom: solid white 4px;
+}
+
+.contatti-testo p {
+    color: white;
+}
+
+.TEV {    
+    background-color: #138074;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.Tel {
+    width: 500px;
+    height: 130px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.Em {
+    width: 500px;
+    height: 130px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    margin: 0 50px;
+}
+
+.Via {
+    width: 500px;
+    height: 130px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.contatti-icons {
+    font-size: 60px;
+}
+
+.orari-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    height: 270px;
+}
+
+
+.map-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    height: 500px;
+}
+
+.orari h1 {
+    margin: 5px 0;
+    color: #019b43;
+}
+
+.Giorni {
+    margin-top: 15%;
+    color: #138074;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.orari p{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/*Registrati*/
+.Registrati-box {
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 450px;
+    height: 540px;
+    border: 3px solid rgba(255, 255, 255, 0.877);
+    border-radius: 30px;
+}
+
+#user-txt{
+    margin-left: 45px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Registrati-box h1{
+    font-size: 40px;
+    border-bottom: solid 3px white;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PRIVACY POLICY*/
+.Privacy-termini-box {
+    background-color: rgb(226, 226, 226);
+    height: auto;
+}
+
+.Privacy-termini-box h2 {
+    font-size: 35px;
+    color: #138074;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.Privacy-termini-box p {
+    margin-left: 30px;
+    font-weight: 500;
+    margin-top: 0px;
+    font-size: 20px;
+    color: black;
+}
+
+.Privacy-termini-box h3 {
+    color: #019b43;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-bottom: 1px;
+}
+
+.Privacy-termini-box a {
+    color: #138074;
+}
+
+
+
+
+
+
+
+/*COOKIE POLICY*/
+.cookie-policy-box{
+    background-color: rgb(226, 226, 226);
+    height: auto;
+}
+
+.cookie-policy-box h2 {
+    font-size: 35px;
+    color: #138074;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.cookie-policy-box p {
+    margin-left: 30px;
+    font-weight: 500;
+    margin-top: 0px;
+    font-size: 20px;
+    color: black;
+}
+
+.cookie-policy-box ul {
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cookie-policy-box li {
+    list-style: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+.cookie-policy-box span {
+    font-weight: bold;
+    color: #138074;
+    font-size: 20px;
+}
+
+.cookie-policy-box h3 {
+    color: #019b43;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-bottom: 1px;
+}
+
+.cookie-policy-box a {
+    color: #138074;
+}
